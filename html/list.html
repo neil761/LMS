@@ -45,9 +45,56 @@
         <div class="list-container">
             <div class="row mb-4">
                 <div class="col d-flex flex-column align-items-end">
-                    <a href="#" class="add btn btn-primary mb-2">
+                    <a href="#" class="add btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <i class="bi bi-plus"></i> New Laundry
                     </a>
+
+                    <!-- modal form -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">New Laundry</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                  <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Remarks</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <hr>
+                            </div>
+                                <div class=" dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Laundry Category`
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Bed Sheets</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <label for="exampleFormControlInput1" class="form-label">Weight</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+
+                                </div>
+                                <div class="">
+                                    <a href="#" class="add btn btn-primary mb-2" data-bs-toggle="modal">
+                                        <i class="bi bi-plus"></i> Add to List
+                                    </a>
+                                </div>
+
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                     
                     <form class="d-flex" role="search">
                         <h6 class="search mt-2">Search:</h6>
