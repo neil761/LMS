@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+    background-color: #e6f2fd;
+}
 .side{
     list-style-type: none;
     text-decoration: none;
@@ -6,20 +9,20 @@
 .bar{
     margin-left: 4.68%;
 }
-#sidebar a {
+.pos{
+    text-decoration: none;
     color: white;
     font-weight: bold;
-    text-decoration: none;
 }
-#sidebar {
+.sidebar{
+    position: fixed;
     background-color: #0b4d8b;
-    color: white;
-    height: 100vh;
+    height: 100%;
+    width: 16.69%;
     padding-top: 20px;
 }
-#sidebar a:hover {
+.pos:hover{
     color: #a0d7ff;
-    text-decoration: none;
 }
 .dashboard-title {
     font-weight: bold;
