@@ -37,6 +37,11 @@
                                 <span><i class="bi bi-people"></i></span> Users
                             </a>
                         </li>
+                        <li class="bar nav-item">
+                            <a class="out nav-link" href="login.html">
+                                <span><i class="bi bi-box-arrow-left"></i></span> Log-out
+                            </a>
+                        </li>
                     </ul>
         </div>
     </section>
@@ -45,12 +50,12 @@
         <div class="list-container">
             <div class="row mb-4">
                 <div class="col d-flex flex-column align-items-end">
-                    <a href="#" class="add btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <a href="#" class="new btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <i class="bi bi-plus"></i> New Laundry
                     </a>
 
                     <!-- modal form -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="mod modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -68,25 +73,58 @@
                                 </div>
                                 <hr>
                             </div>
-                                <div class=" dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Laundry Category`
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Bed Sheets</a></li>
-                                    <li><a class="dropdown-item" href="#">Clothes</a></li>
-                                    </ul>
-                                </div>
-                                <div class="">
-                                    <label for="exampleFormControlInput1" class="form-label">Weight</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
 
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="col-4 md-4 position-relative">
+                                            <select class="sel form-select" id="paymentMethod" required>
+                                                <option value="" disabled selected class="drop">Laundry Category</option>
+                                                <option value="Bedsheets">Bedsheets</option>
+                                                <option value="Clothes">Clothes</option>
+                                            </select>
+                                            <div class="invalid-tooltip">
+                                                Please Select a Category
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="col-10">
+                                            <form class="d-flex align-items-center">
+                                                <label for="exampleFormControlInput1" class="me-2">Weight:</label>
+                                                <input type="number" class="weights form-control" id="exampleFormControlInput1">
+                                            </form>
+                                        </div>
+                                        
+
+                                    </div>
                                 </div>
-                                <div class="">
+
+                                <div class="d-flex justify-content-end">
                                     <a href="#" class="add btn btn-primary mb-2" data-bs-toggle="modal">
                                         <i class="bi bi-plus"></i> Add to List
                                     </a>
                                 </div>
+                                <table class="table table-bordered text-center">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Weight(kg)</th>
+                                        <th scope="col">Unit Price</th>
+                                        <th scope="col">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th></th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>   
+                                    </tbody>
+                                </table>
+                                <hr>
 
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

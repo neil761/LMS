@@ -13,6 +13,17 @@ body{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin-left: 28px;
+}
+.out{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 400px;
+    margin-left: 48px;
+}
+.out:hover{
+    color: #a0d7ff;
 }
 .sidebar{
     position: fixed;
