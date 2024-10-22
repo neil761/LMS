@@ -44,8 +44,6 @@
                         </li>
                     </ul>
         </div>
-    
-    
     </section>
 
     <section id="listss">
@@ -74,24 +72,21 @@
                                     <input type="email" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Password</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" required>
                                 </div>
-                                <div class="col-2 md-4 position-relative">
+                                <div class="col-2 mb-5 position-relative">
                                     <select class="sel form-select" id="paymentMethod" required>
                                         <option value="" disabled selected class="drop">Position</option>
                                         <option value="Bedsheets">Admin</option>
                                         <option value="Clothes">Employee</option>
                                     </select>
-                                    <div class="invalid-tooltip">
-                                        Please Select a Position
-                                    </div>
                                 </div>
                             </div>
 
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Add</button>
+                              <a href="user.html" class="btn btn-primary">Add</a>   
                             </div>
                           </div>
                         </div>
@@ -101,10 +96,10 @@
                 <table class="table table-bordered text-center">
                     <thead>
                         <tr>
-                        <th>#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Position</th>
-                        <th scope="col">Action</th>
+                        <th class="text-center">#</th>
+                        <th scope="col" class="text-center">Name</th>
+                        <th scope="col" class="text-center">Position</th>
+                        <th scope="col" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -112,17 +107,25 @@
                         <th>1</th>
                         <td>Mark</td>
                         <td>
-                            <span class="claim px-2 ">admin</span>
+                            <span class="claim px-2 ">Admin</span>
                         </td>
                         <td>
-                            <a href="#" class="del btn btn-primary ">Action</a>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Action
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item bg-primary text-light" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item bg-danger text-light" href="#">Remove</a></li>
+                                </ul>
+                            </div>
                         </td>
                         </tr>
                         <tr>
                             <th>2</th>
                             <td>Zuckyer</td>
                             <td>
-                                <span class="claim px-2 ">employee</span>
+                                <span class="claim px-2 ">Employee</span>
                             </td>
                             <td>
                                 <div class="dropdown">
@@ -130,10 +133,10 @@
                                       Action
                                     </button>
                                     <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Edit</a></li>
-                                      <li><a class="dropdown-item" href="#">Remove.</a></li>
+                                      <li><a class="dropdown-item bg-primary text-light" href="#">Edit</a></li>
+                                      <li><a class="dropdown-item bg-danger text-light" href="#">Remove</a></li>
                                     </ul>
-                                  </div>
+                                </div>
                             </td>
                             </tr>
                     </tbody>
